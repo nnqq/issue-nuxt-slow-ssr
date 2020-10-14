@@ -160,7 +160,7 @@
   </b-card>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 import companyGetters from '../customHelpers/companyGetters'
 

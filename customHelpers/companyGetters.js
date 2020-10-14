@@ -1,7 +1,7 @@
-import unifyDate from './unifyDate'
+const unifyDate = require('./unifyDate')
 
-export default {
-  toShowedPhone (phone: number): string {
+module.exports = {
+  toShowedPhone (phone) {
     if (!phone) {
       return '—'
     }
@@ -32,7 +32,7 @@ export default {
     })
     return r
   },
-  toShowedDate (date: string): string {
+  toShowedDate (date) {
     return unifyDate(date).toLocaleDateString()
   },
   safeAppStoreUrl (company) {

@@ -370,14 +370,14 @@
   </b-container>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 import mock from "../customHelpers/mock";
 import select from "../customHelpers/select";
 
 export default Vue.extend({
-  async asyncData (): Promise<object> {
-    const res: any = await new Promise((resolve => setTimeout(() => {
+  async asyncData () {
+    const res = await new Promise((resolve => setTimeout(() => {
       resolve(mock)
     },1)))
 
@@ -389,7 +389,7 @@ export default Vue.extend({
       title: 'title'
     }
   },
-  data (): any {
+  data () {
     return {
       selectOptions: [{
         text: 'Не важно',

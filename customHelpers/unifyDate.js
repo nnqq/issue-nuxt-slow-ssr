@@ -1,4 +1,4 @@
-export default (d: string): Date => {
+module.exports = (d) => {
   if (!d) {
     return new Date()
   }
